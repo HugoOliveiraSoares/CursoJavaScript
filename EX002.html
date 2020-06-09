@@ -1,0 +1,43 @@
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX002</title>
+    <style>
+        body
+        {
+            background-color: rgb(91, 91, 255);
+        }
+
+        h1{
+            color: darkkhaki;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ola</h1>
+    <script>
+        /* Parsing
+        * Number.parseInt(n) || parseInt(n) -> Passa para inteiro
+        * Number.parseFloat(n) || parseFloat(n) -> Passa para real
+        * Number(n) -> Indentifica automanticamente o tipo
+        * String(n) || n.toString() -> Passa para String
+        */
+        var n1 = prompt('Digite um número: ')
+        var n2 = prompt('Digite outro número: ')
+        var s = Number(n1) + Number(n2)
+        // alert('A soma entre '+ n1 + " e "+ n2 + " é igual a "+s)
+        alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        /******
+        * var s = 'Java Script'      // não faz interpolação
+        * 'Eu estou aprendendo s'    // usa concatenação 
+        * `Eu estou aprendendo ${s}` // usa template string
+        ======================================================
+        * s.length // quantos caracteres a string tem
+        * s.toUpperCase() // tudo para 'MAIÚSCULAS'
+        * s.toLowerCase() // tudo para 'minúsculas'
+        ******/
+    </script>
+</body>
+</html>

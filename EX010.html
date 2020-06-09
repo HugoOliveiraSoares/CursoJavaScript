@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PASSAPORTE</title>
+</head>
+<body>
+    <h1>NACIONALIDADE</h1>
+    Digite o seu pais: <input type="text" id="nac">
+    <input type="button" value="Verificar" onclick="nasci()">
+    <div id="msg"></div>
+
+    <script>
+        
+        function nasci()
+        {
+            var pais = document.getElementById('nac')
+            var msg = document.getElementById('msg')
+
+            msg.innerHTML = `<p>Vivendo em ${pais.value}</p>`
+
+            if (pais.value == 'Brasil') 
+            {
+                msg.innerHTML += '<p>Brasileiro</p>'
+            } else 
+            {
+                msg.innerHTML += '<p>Estrangeiro</p>'
+            }
+        }
+
+    </script>
+
+</body>
+</html>

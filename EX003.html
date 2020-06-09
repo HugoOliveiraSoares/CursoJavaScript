@@ -1,0 +1,35 @@
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX003</title>
+    <style>
+        body{
+            font: normal 12pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /******
+            * var s = 'Java Script'      // não faz interpolação
+            * 'Eu estou aprendendo s'    // usa concatenação
+            * `Eu estou aprendendo ${s}` // usa template string
+            =====================================================
+            * s.length // quantos caracteres a string tem
+            * s.toUpperCase() // tudo para 'MAIÚSCULAS'
+            * s.toLowerCase() // tudo para 'minúsculas'
+            =====================================================
+            * var n1 = 1545.5
+            * n1.toFixed(2) -> 2 casas depois da virgula => 1545.50
+            * n1.toFixed(2).replace('.' , ',') -> 1545,5
+            * n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) -> // notação de moedas => R$ 1.545,50
+            ******/
+        var nome = prompt('Qual o seu nome? ')
+        document.writeln(`Olá, <strong>${nome}</strong> seu nome tem ${nome.length} letras.<br/>`)
+        document.writeln(`O seu nome em mainusculas é ${nome.toUpperCase()}.<br/>`)
+        document.writeln(`O seu nome em minusculas é ${nome.toLowerCase()}.<br/>`)
+    </script>
+    
+</body>
+</html>
